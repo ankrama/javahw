@@ -17,10 +17,11 @@ import java.util.function.BiPredicate;
 
 public class Walk {
 
-    // 1. Выводить содержимое каталога
-    // 2. Создавать файл
-    // 3. Отоброжать содержимео файла - FileStream, Scanner, BufferedReader || Files
-    // 4. Создавать катологи
+    // 1. Выводить содержимое каталога++
+    // 2. Создавать файл+
+    // 3. Отоброжать содержимео файла - FileStream, Scanner, BufferedReader || Files+
+
+    // 4. Создавать катологи+
 
 
     public static void main(String[] args) throws IOException {
@@ -31,13 +32,13 @@ public class Walk {
        }
 
         // 1. File, Files
-        File parentDir = new File("."); // . - относительный путь к текущей директории в которой запускается программа
+        File parentDir = new File("."); // . - относительный путь к текущей директории в которой запускается программа//j,
         //  > java -cp target\classes org.itstep.Walk
         // System.out.println(parentDir.getName());
         //System.out.println(parentDir.getAbsolutePath());
 
 
-        for (File f : parentDir.listFiles()) {
+        for (File f : parentDir.listFiles()) {   //получил папки и файлы
             if (f.isDirectory()) {
                 System.out.printf("[DIR]          %-10s%n", f.getName());
             } else {
@@ -58,14 +59,16 @@ public class Walk {
 
 
 //        try {
-//            System.out.println(parendDir.createNewFile());
+  //          System.out.println(parentDir.createNewFile());//создание файла
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-//        Files.list(Paths.get("."))
+
+
+//        Files.list(Paths.get("."))  //содерж каталога
 //                .forEach(path -> System.out.printf("%-15s %5s %s%n",path.getFileName(), path.toFile().isDirectory()? "[DIR]" : "", path.toFile().length() > 0 ? path.toFile().length() : ""));
 
-//        final String filename = "test.txt";
+//        final String filename = "test.txt";//содерж файла
 //        Path wayFileName = Paths.get(filename);
 //        Files.readAllLines(wayFileName);//#3
 //
@@ -75,8 +78,10 @@ public class Walk {
 
         //поиск файла/каталога
         System.out.println("All java and class files:\n");
+
         Files.find(Paths.get("."), 10, (path, basicFileAttributes) -> {
             //System.out.println(path);
+            
             FileTime lastModifiedTime = basicFileAttributes.lastModifiedTime();
             FileTime past10mins = FileTime.from(System.currentTimeMillis() - 10 * 60 * 1000, TimeUnit.MILLISECONDS);
             //System.out.println(lastModifiedTime + " " + path.getFileName() + " " + past10mins);
@@ -85,6 +90,9 @@ public class Walk {
 //                return fileName.endsWith(".class") || fileName.endsWith(".java");
         }).forEach(System.out::println);
         System.out.println(Files.exists(Paths.get("link.txt.lnk")));
+
+
+        Files.createDirectories(Paths.get("C:\\Users\\student\\Desktop\\JavaHomework\\22 09\\test\\test")); //new catalog
 
 
     }

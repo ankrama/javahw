@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .text{
+            width: 220px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 3px solid;
+        }
+
+        .validText{
+            width: 220px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            color: greenyellow;
+            border: 3px solid greenyellow;
+            border-radius: 5px;
+            background:url("img/valid.png") no-repeat 190px;
+            background-size: 30px;
+        }
+
+        .unvalidText{
+            width: 220px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            color: red;
+            border: 3px solid red;
+            border-radius: 5px;
+            background:url("img/invalid.png") no-repeat 190px;
+            background-size: 30px;
+
+        }
+
+        .checkbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            margin: 10px 0 0 20px;
+        }
+        .checkbox + label {
+            position: relative;
+            padding: 0 0 0 70px;
+
+        }
+        .checkbox + label:before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            width: 50px;
+            height: 26px;
+            border-radius: 5px;
+            border: 1px solid green;
+            transition: .2s;
+        }
+        .checkbox + label:after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 2px;
+            width: 22px;
+            height: 22px;
+            border-radius: 3px;
+            background: green;
+            transition: .2s;
+        }
+        .checkbox:checked + label:before {
+            border-color: red;
+        }
+
+        .checkbox:checked + label:after {
+            background: red;
+        }
+        .checkbox:checked + label:after {
+            left: 26px;
+        }
+
+        input[type=radio] + label:before {
+            content: "\26AB";
+            border: 1px solid green;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 20px;
+            margin: -5px 5px 0 0;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0;
+
+        }
+        input[type=radio]:checked + label:before {
+            border: 1px solid green;
+            font-size: 15px;
+        }
+        .radio{
+            display: none;
+        }
+
+        button{
+            padding: 15px 20px 15px 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            margin-left: 15px;
+
+        }
+
+        .active{
+            background: green;
+        }
+
+
+        textarea{
+            width: 500px;
+            height: 200px;
+
+        }
+        .activeHover{
+            background: darkgreen;
+        }
+
+
+        .danger{
+            background: red;
+        }
+
+
+        .dangerHover{
+            background: pink;
+        }
+
+        .disableads{
+            width: 120px;
+            background: #cccccc;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>Inputs</h2>
+    <input  class="text" placeholder="Enter some text" name="text" required/>
+    <input  class="validText" placeholder="Enter some text" name="text" required/>
+    <input  class="unvalidText" placeholder="Enter some text" name="text" required/>
+    <br/>
+    <br/>
+    <h2>Check boxes</h2>
+    <input class="checkbox" id="checkbox1" type="checkbox" name="subscribe1"/><label for="checkbox1">Subscribe</label>
+    <input class="checkbox" id="checkbox2" type="checkbox" name="subscribe2"/><label for="checkbox2" >Subscribe</label>
+    <h2>Radio buttons</h2>
+    Gender: <input type="radio" class="radio" name="gender1" value="male" id="radio1" checked/><label for="radio1">Male</label>
+    <input type="radio" class="radio" name="gender1" value="female" id="radio2"/><label for="radio2">Female</label>
+    <h2>Buttons</h2>
+    <button class="active">Active</button>
+    <button class="activeHover">Hower</button>
+    <button class="danger">Denger</button>
+    <button class="dangerHover">Denger</button>
+    <button class="disableads">Disablead</button>
+    <h2>Text area</h2>
+    <textarea placeholder="Enter some text..."></textarea>
+
+</form>
+
+
+</body>
+</html>

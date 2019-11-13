@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+    <style>
+        main{
+            background-color: turquoise;
+            width: 800px;
+            height: 450px;
+            margin: 30px;
+            border-radius: 20px;
+        }
+        h2 {
+            background-color: orange;
+            width: 500px;
+            color: whitesmoke;
+            padding-left: 60px;
+            margin-left: -30px;
+
+        }
+
+        form {
+            margin-left: 40px;
+
+        }
+
+        input{
+            background-color: paleturquoise;
+            height: 30px;
+            padding-left: 10px;
+            border: none;
+            border-bottom: grey 2px solid;
+
+        }
+        .bigWin{
+            width: 350px;
+        }
+        .littleWin{
+            width: 107px;
+        }
+
+        .heyYouGoAway {
+            margin-left: 170px;
+        }
+
+        img {
+            margin-left: 450px;
+            margin-top: -222px;
+            width: 350px;
+            height: 350px;
+            object-position: 80px 50px;
+            background: turquoise;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+        <br/>
+    <h2>CREDIR CARD DETAILS</h2>
+        <form action="OBRABAOTCHIK_ZAPROSOW">
+
+            <p><label for="cardNumber">Card Number</label></p>
+            <input class="bigWin" id="cardNumber" name="CardNumber" pattern="[0-9] {4}[0-9] {4}[0-9] {4}[0-9] {4}"
+            placeholder="1234 5678 9101 1121" required>
+            <p><label for="nameONcard">Name on card</label></p>
+            <input class="bigWin" id="nameONcard" name="CardName" placeholder="Name Surname" required>
+            <p><label for="month">Expiry Date</label><label class="heyYouGoAway" for="cvv">CVV/CNV</label></p>
+            <input class="littleWin" id="month" placeholder="02" name="month" required/>
+            <input class="littleWin" name="years" placeholder="2017" required/>
+            <input id="cvv" class="littleWin" type="password" name="password" maxlength="3"
+                   placeholder="***" required/>
+        </form>
+
+    <img src="img/moon_flag.png" alt="moon_flag"/>
+
+</main>
+</body>
+
+</html>

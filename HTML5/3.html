@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <style>
+        h2{
+            font-family: sans-serif;
+        }
+
+
+        img {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 10px;
+            display: inline-block;
+        }
+        .big {
+            width: 353px;
+        }
+        input, select {
+            border: none;
+            border-bottom: 2px solid grey;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .small {
+
+            width: 160px;
+
+        }
+        .floatLeftBlock{
+            float: left;
+        }
+        .downBeac{
+            padding-top: 8px;
+        }
+        .smalll{
+            width: 180px;
+
+        }
+
+        .buttton{
+            clear: left;
+        }
+
+        button{
+            margin-left: 65%;
+            padding: 15px 20px 15px 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            background-color: teal;
+        }
+
+    </style>
+</head>
+<body>
+
+<form>
+
+    <div class="floatLeftBlock">
+        <h2>
+            Registration form
+        </h2>
+        <p><img src="img/username.png" alt="username"/><input class="big" placeholder="Username" name="username"></p>
+        <p><img src="img/email.png" alt="email"/><input class="big" placeholder="Email" name="email"></p>
+        <p><img src="img/pswd.png" alt="pswd"/><input class="small" type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Confirm password" class="small" name="confirmPassword"></p>
+        <p><input  type="checkbox" name="checkbox1">I want to receive mews and special offers</p>
+        <p><input  type="checkbox" name="checkbox2">I agree with the Terns and Conditions</p>
+        </h2>
+    </div>
+    <div class="downBeac">
+        <h2>Personal details</h2>
+        <p><input name="firstName" class="small" placeholder="First name"/>
+            <input name="lastName" class="small" placeholder="Last name"/></p>
+        <p style="padding-top: 8px"><select size="1" class="smalll" name="male">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+            <input placeholder="mm/dd/yy"  class="small" name="birthday"/> </p>
+    </div>
+    <div class="buttton">
+        <button>SUBMIT</button>
+    </div>
+
+</form>
+
+</body>
+</html>

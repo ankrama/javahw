@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Handsome</title>
     <!-- Тут я увлекся списыванием  но каждую строчку проработал -->
+    <!-- Списывать можно, но только если если ты действительно проработал код и сможешь его пояснить -->
     <style>
-        body{
+        body {
             color: whitesmoke;
             font-weight: bolder;
         }
-        header{
+
+        header {
             height: 25px;
             padding: 20px;
             margin: 10px;
             background: #932d57;
         }
 
-        menu{
+        menu {
             height: 25px;
             padding: 20px;
             margin: 10px;
@@ -24,26 +27,28 @@
         }
 
 
-        aside{
+        aside {
             background-color: #b75b81;
             margin: 0.8%;
             padding: 1%;
         }
 
-        .aside1{
+        .aside1 {
             float: left;
             width: 20%;
             height: 50px;
             text-align: center;
         }
-        .aside2{
+
+        .aside2 {
             float: left;
             width: 20%;
             height: 100px;
             clear: left;
             text-align: center;
         }
-        .aside3{
+
+        .aside3 {
             float: right;
             width: 10%;
             height: 200px;
@@ -51,7 +56,7 @@
         }
 
 
-        main{
+        main {
             float: right;
             background-color: #b75b81;
             padding: 1%;
@@ -59,38 +64,46 @@
             width: 59%;
             height: 300px;
         }
+
         section {
             background-color: #dc93b1;
-            padding: 50px;
+            padding: 20px;
             margin: 10px;
         }
 
-        footer{
+        footer {
             margin: 10px;
             height: 30px;
             background-color: #6e0a34;
             padding: 20px;
             clear: right;
         }
-
     </style>
 </head>
+
 <body>
 
     <header>HEADER</header>
-    <menu>MENU</menu>
+    <!-- Error: Text not allowed in element menu in this context. -->
+    <menu>
+        <li>MENU</li>
+    </menu>
     <aside class="aside3">
-        A<br/>
-        S<br/>
-        I<br/>
-        D<br/>
-        E<br/>
-        <br/>
-        3<br/>
+        A<br />
+        S<br />
+        I<br />
+        D<br />
+        E<br />
+        <br />
+        3<br />
     </aside>
     <main><span>MAIN CONTENT</span>
-        <SECTION>SECTION 1</SECTION>
-        <SECTION>SECTION 2</SECTION>
+        <section>
+            <h2>SECTION 1</h2>
+        </section>
+        <section>
+            <h2>SECTION 2</h2>
+        </section>
     </main>
 
     <aside class="aside1">ASIDE 1</aside>
@@ -99,4 +112,5 @@
     <footer>FOOTER</footer>
 
 </body>
+
 </html>

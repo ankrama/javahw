@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>CardGame</title>
     <style>
-        h1{
+        h1 {
             font-weight: bolder;
         }
-        .main{
+
+        .main {
             background-color: #f6f6f6;
             width: 450px;
-            padding: 0 px 40px 30px;
+            /* Error: CSS: padding: px is not a padding value.
+            From line 13, column 32; to line 13, column 35
+            0 px 40px 30px;↩     */
+            padding: 0 40px 30px;
         }
-        .RED{
-            color:red;
-            background-color:#e0e0e0;
+
+        .RED {
+            color: red;
+            background-color: #e0e0e0;
             padding: 5px;
         }
-        .BLACK{
-            color:black;
-            background-color:#e0e0e0;
+
+        .BLACK {
+            color: black;
+            background-color: #e0e0e0;
             padding: 5px;
         }
-        .CARD{
+
+        .CARD {
             font-size: 30px;
             font-family: "Sakkal Majalla";
         }
     </style>
 </head>
+
 <body>
 
-<div class="main">
-    <h1>
-        Player1:
-    </h1>
+    <div class="main">
+        <h1>
+            Player1:
+        </h1>
 
-    <div class="CARD">
-        <span class="BLACK">2&clubs;</span> <span class="RED">9&hearts;</span> <span class="RED">6&hearts;</span>
-        <span class="RED">A&diams;</span> <span class="BLACK">Q&clubs;</span> <span class="BLACK">J&clubs;</span>
+        <div class="CARD">
+            <span class="BLACK">2&clubs;</span> <span class="RED">9&hearts;</span> <span class="RED">6&hearts;</span>
+            <span class="RED">A&diams;</span> <span class="BLACK">Q&clubs;</span> <span class="BLACK">J&clubs;</span>
+        </div>
+
+        <h1>
+            Player2:
+        </h1>
+        <div class="CARD">
+            <span class="RED">3&hearts;</span> <span class="BLACK">A&clubs;</span> <span class="BLACK">10&clubs;</span>
+            <span class="RED">K&diams;</span> <span class="BLACK">8&spades;</span> <span class="RED">3&hearts;</span>
+
+        </div>
+
+
     </div>
-
-    <h1>
-        Player2:
-    </h1>
-    <div class="CARD">
-        <span class="RED">3&hearts;</span> <span class="BLACK">A&clubs;</span> <span class="BLACK">10&clubs;</span>
-        <span class="RED">K&diams;</span> <span class="BLACK">8&spades;</span> <span class="RED">3&hearts;</span>
-
-    </div>
-
-
-</div>
 
 </body>
+
 </html>

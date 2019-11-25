@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TodoList</title>
     <style>
+        .crossfire {}
 
-     .crossfire{
+        li {
+            margin: 0;
+            padding: 10px;
+        }
 
-     }
+        ul {
+            list-style-type: none;
+            list-style-position: inside;
 
-     li {
-         margin: 0;
-         padding: 10px;
-     }
+        }
 
-     ul {
-         list-style-type: none;
-         list-style-position: inside;
+        .noteven {
+            background-color: skyblue;
+        }
 
-     }
-     .noteven {
-         background-color: skyblue;
-     }
-    .checked {
-        background: grey;
-    }
+        .checked {
+            background: grey;
+        }
+
         .even {
             background: #35d8c8;
         }
 
-    h3{
-        padding-left: 42px;
-    }
+        h3 {
+            padding-left: 42px;
+        }
     </style>
 </head>
+
 <body>
 
-<h3><b>My TO DO List</b></h3>
-<ul>
+    <h3><b>My TO DO List</b></h3>
+    <ul>
 
-    <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" /> Hit the gym  &#9746;</li>
-    <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Pay bills</del>  &#9746;</li>
-    <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Meet John  &#9746;</li>
-    <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Buy eggs  &#9746;</li>
-    <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Read book</del>  &#9746;</li>
-    <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Orgonize office  &#9746;</li>
-    <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Eat dinner  &#9746;</li>
-    <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Buy apples  &#9746;</li>
-    <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Meet George  &#9746;</li>
-    <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Feed the cat  &#9746;</li>
-    <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Write a letter</del>  &#9746;</li>
-    <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Run 1 km  &#9746;</li>
-</ul>
+        <!-- Не правильно! Изображения нужно было добавлять как маркеры списка через CSS (list-style-type) -->
+        <!-- hspace - устаревший атрибут! -->
+        <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" /> Hit the gym &#9746;</li>
+        <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Pay bills</del> &#9746;
+        </li>
+        <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Meet John &#9746;</li>
+        <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Buy eggs &#9746;</li>
+        <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Read book</del> &#9746;
+        </li>
+        <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Orgonize office &#9746;</li>
+        <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Eat dinner &#9746;</li>
+        <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Buy apples &#9746;</li>
+        <li class="noteven"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Meet George &#9746;</li>
+        <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Feed the cat &#9746;</li>
+        <li class="checked"><img src="./img/checked_16.png" hspace="20px" alt="checked" /><del>Write a letter</del>
+            &#9746;</li>
+        <li class="even"><img src="./img/unchecked_16.png" hspace="20px" alt="checked" />Run 1 km &#9746;</li>
+    </ul>
 
 
 
 
 </body>
+
 </html>
